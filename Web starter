@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memori Basic Starter</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f4f4f9; }
+        .card { padding: 20px; border-radius: 8px; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #333; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Memori Connection Test</h1>
+        <p id="status">Initializing Memori...</p>
+    </div>
+
+    <script>
+        // Simple script to demonstrate how a dev might start 
+        // interacting with the Memori logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const status = document.getElementById('status');
+            setTimeout(() => {
+                status.innerText = "Memori is ready for your data!";
+                status.style.color = "green";
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
